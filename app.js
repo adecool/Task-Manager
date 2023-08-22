@@ -5,6 +5,7 @@ const connectDB = require('./db/connect')
 require('dotenv').config()
 
 //middleware -- code below helps to access req.body
+app.use(express.static('./public'))
 app.use(express.json())
 
 
